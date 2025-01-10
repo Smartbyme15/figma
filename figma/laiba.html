@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+<style>
+  /* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(35, 9, 121, 1) 0%, rgba(255, 0, 232, 1) 85%);
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 90%;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.column:first-child {
+    background: linear-gradient(90deg, rgba(111, 109, 134, 0.8) 0%, rgba(72, 42, 172, 0.8) 0%, rgba(247, 166, 240, 0.8) 85%);
+    color: white;
+}
+
+.column:last-child {
+    background-color: white;
+}
+
+.image img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+}
+
+.image {
+    text-align: center;
+}
+
+.form-group input {
+    width: calc(100% - 40px);
+    margin: 10px auto;
+    background: linear-gradient(90deg, rgb(136, 136, 180) 0%, rgb(176, 175, 182) 0%, rgb(224, 182, 221) 85%);
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-group input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.form-group > i {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.list ul, .Languages ul, .social ul {
+    padding: 0;
+    list-style: none;
+}
+
+.hobbies > h4 {
+    background: linear-gradient(90deg, rgb(136, 136, 180) 0%, rgb(176, 175, 182) 0%, rgb(224, 182, 221) 85%);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hobbies > i {
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(212, 209, 209);
+}
+
+.experience > h3, .experience > hr, .experience > h5, .experience > h6, .experience p {
+    margin: 10px 0;
+}
+
+.experience h3 {
+    text-align: center;
+    background-color: rgb(78, 74, 74);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .column {
+        flex: 100%;
+        margin: 10px 0;
+    }
+
+    .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hobbies > h4 {
+        width: 50%;
+    }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .column {
+        flex: 100%;
+    }
+
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hobbies > h4 {
+        width: 70%;
+    }
+
+    .form-group input {
+        width: 90%;
+    }
+
+    .experience h3 {
+        font-size: 1.2rem;
+    }
+}
+
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="image">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/026/497/734/small_2x/businessman-on-isolated-png.png" alt="">
+        </div>
+        <div class="image">
+            <h2 class="text-dark">FOLLY</h2>
+          <h1>JUSTIN</h1>
+          <h2 class="text-dark">UI/UX designer</h2>
+
+
+        </div>
+     
+          <div class="form-group">
+            <label for="email"></label>
+            <i class='bx bx-envelope' ></i>
+            <input type="email" id="email" name="email" placeholder="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone"></label>
+            <i class='bx bx-phone'></i>
+
+            <input type="tel" id="phone" name="phone" placeholder="phone number">
+          </div>
+          <div class="form-group">
+            <label for="website"></label>
+            <i class='bx bx-globe'></i>
+            <input type="url" id="website" name="website"placeholder="e.g., https://www.example.com" required >
+          </div>
+            <div class="form-group">
+                <label for="location"></label>
+                <i class='bx bx-location-plus'></i>
+                <input type="text" id="location" name="location" placeholder=" location" required>
+              </div>
+              <br>
+              <div class="list">
+                <ul>
+                    <h4>Industry Knowledge</h4>
+                    <li>user interface </li>
+                    <li>user experience</li>
+                    <li>product design</li>
+                    <li>intraction design</li>
+                    <li>design reserch</li>
+                    <li>web design</li>
+                </ul>
+              </div>
+              <br>
+              <div>
+                <ul class="Languages">
+                  <h4>Languages</h4>
+                  <li>English<i class='bx bxs-circle'></i><i class='bx bxs-circle'></i><i class='bx bxs-circle'></i><i class='bx bxs-circle'></i></li>
+                  <li>urdu<i class='bx bxs-circle'></i><i class='bx bxs-circle'></i><i class='bx bxs-circle'></i><i class='bx bx-circle'></i><i class='bx bx-circle'></i></li>
+                  <li>french <i class='bx bxs-circle'></i><i class='bx bxs-circle'></i><i class='bx bx-circle'></i><i class='bx bx-circle'></i></li>
+                </ul>
+              </div>
+              <br>
+              <div class="social">
+                <ul>
+                <h4>Social</h4>
+                <li>Yoursitename.com</li>
+                <li> linkedin.com/in/yourName</li>
+                <li>dribble.com/yourName</li>
+                <li>behance.com/yourName</li>
+              </ul>
+              </div>
+              <br>
+              <div class="hobbies">
+
+                <h4 >Hobbies</h4>
+                <i class='bx bx-book-open'></i>
+                <i class='bx bx-child'></i>
+                <i class='bx bxs-microphone'></i>
+                <i class='bx bx-football'></i>
+                <p>reading dancing singing football</p>
+                <br>
+          
+                
+              </div>
+          </div>
+        
+        <div class="column">
+          <div class="">
+            <div class="experience">
+         <h3>EXPERIENCE</h3><hr>
+         <h5>blue Moon Contantly Studio</h5>
+         <h6>senier UI designer</h6>
+         <p class="blue">AUGEST2020-present 1year, New york</p>
+         <p>product team to prototype, designer  and deliver <br> UI and UX experience with a lean  design process:<br> reserch, design, test and iterate.</p>
+         <h5>Black york product design </h5>
+         <h6>senier UI designer</h6>
+         <p class="blue">AUGEST 2015 - AUG 2020 -5 year, new york</p>
+         <p>lead the UI design with the accountibility of the design system ,<br>collaborated with product and development teams on core projects to <br> inprove product interfaces and experience.</p>
+            <h3>EDUCATION</h3>
+            <hr>
+            <h5>bachelor of Engineering in informantion of technology</h5>
+            <h6>SCAT  Education campus </h6>
+            <p class="blue">2011-2015 , New York </p>
+            <h5>NJIT higher</h5>
+            <h6>AB Experiment Campus</h6>
+            <p class="blue">2009-2011, New york</p>
+            <h3>MY SKILLS </h3>
+            <hr>
+        </div>
+        </div>
+        </div>
+      </div>
+</body>
+</html>
